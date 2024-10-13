@@ -35,7 +35,7 @@ let x: [string, number];
 x = ["Seamus", 10];
 
 ## ENUM
-Uma adição muito interessante ao padrão de tipos do JavaScript foi o enum, que assim como no C#, permite dar nomes mais amigáveis a valores numéricos, exe:
+O enum em TypeScript é uma maneira de definir conjuntos de valores nomeados e constantes, seja com valores numéricos ou strings. Ele ajuda a tornar o código mais legível, fácil de manter e evita o uso de números ou strings "mágicos" que podem confundir durante a leitura do código, exe:
 
 enum Cor {Vermelho, Verde, Azul};
 let corFundo: Cor = Cor.Verde;
