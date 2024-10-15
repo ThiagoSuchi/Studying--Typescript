@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "dev": "tsc && node ./dist/boolean.js",
+    "dev": "tsc && node ./dist/numberBigint.js",
     "build": "tsc"
   },
   "author": "",
