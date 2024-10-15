@@ -3,7 +3,7 @@ console.log(texto);
 
 
 // ==> Variáveis [Type Annotations]
-let nome: string = 'Ana Beatriz';
+let nomeE: string = 'Ana Beatriz';
 console.log(nome);
 
 // ==> Array [Type Annotations]
