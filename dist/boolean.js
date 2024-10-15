@@ -6,7 +6,7 @@ console.log(tarefaConcluida);
 console.log(tarefaPendente);
 // Exemplo 02
 let concluido = false;
-if (!concluido) {
+if (concluido) {
     console.log('Tarefa concluída com sucesso!');
 }
 else {

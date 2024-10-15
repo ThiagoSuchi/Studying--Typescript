@@ -2,7 +2,7 @@
 let texto = 'Hellow World, Thiago Hens';
 console.log(texto);
 // ==> Variáveis [Type Annotations]
-let nome = 'Ana Beatriz';
+let nomeE = 'Ana Beatriz';
 console.log(nome);
 // ==> Array [Type Annotations]
 let animais = ['Cavalo', 'Girafa', 'Elefante', 'Leão'];
