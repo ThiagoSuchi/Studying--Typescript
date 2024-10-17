@@ -26,7 +26,26 @@ console.log(...listaFrutas);
 
 
 // Exe05 ==> Lista Heterogênea de Tupla
+ let fruitNinja: [number, boolean, ...string[]] = [23, true, ...listaFrutas]
+ console.log(fruitNinja);
+
 
 // Exe06 ==> Uso de função com Tuplas
+function listaNomes(nome: string[], idade: number[]){
+    return [...nome, ...idade];
+}
+let nomesIdade = listaNomes(['Thiago', 'Júlia'], [22, 23]);
+console.log(nomesIdade);
+
+
 
 // Exe07 ==> Labeled Tuples com Spread Operator em uma função 
+type Nome =
+        | [primeiroNome: string, sobreNome: string]
+        | [primeiroNome: string, nomeMeio: string, sobreNome: string]
+
+function anotarNomes(...nome: Nome){
+    return [...nome]
+}
+console.log(anotarNomes('Thiago', 'Suchi'));
+console.log(anotarNomes('Thiago', 'Hens', 'Suchi'));
