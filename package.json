@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "dev": "tsc && node ./dist/tupla.js",
+    "dev": "tsc && node ./dist/enum.js",
     "build": "tsc"
   },
   "author": "",

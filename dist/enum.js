@@ -1,12 +1,5 @@
 "use strict";
-let idade = 20;
-let nome = "ThiagoHS";
-let pagamentoEfetuado = false;
-idade = 20;
-nome = "Thiago Hens Suchi";
-pagamentoEfetuado = true;
-console.log(`O cliente: ${nome}`);
-// ENUM
+//----------------- ENUM ------------------
 var Cores;
 (function (Cores) {
     Cores["Amarelo"] = "#f1c40f";
@@ -16,3 +9,17 @@ var Cores;
 })(Cores || (Cores = {}));
 let coresPrimarias = Cores.Verde;
 console.log(`A cor é indicada pelo objeto: ${coresPrimarias}`);
+/*
+ Tipos de Enums
+  ==> Numeric Enum
+  ==> Sting Enum
+ */
+// Enum Numeric 
+var Idiomas;
+(function (Idiomas) {
+    Idiomas[Idiomas["Portugues"] = 0] = "Portugues";
+    Idiomas[Idiomas["Ingles"] = 1] = "Ingles";
+    Idiomas[Idiomas["Frances"] = 2] = "Frances";
+    Idiomas[Idiomas["Espanhol"] = 3] = "Espanhol";
+})(Idiomas || (Idiomas = {}));
+console.log(Idiomas);
