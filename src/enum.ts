@@ -26,3 +26,31 @@ enum Idiomas {
 }
 
 console.log(Idiomas);
+
+// String Enums
+enum Dia {
+    Segunda = 'Seg',
+    Terca = 'Ter',
+    Quarta = 'Qua',
+    Quinta = 'Qui',
+    Sexta = 'Sex',
+    Sabado = 'Sab',
+    Domingo = 'Dom'
+}
+console.log(Dia);
+
+// Quando usar Enums?
+enum tarefas {
+    ToDo,
+    Progress,
+    Done
+}
+const concluidaTarefa = {
+    id: 1,
+    status: tarefas.Done,
+    descricao: 'Tarefa concluída com sucesso!'
+}
+
+if(concluidaTarefa.status === tarefas.Done){
+    console.log(concluidaTarefa.descricao);
+}
