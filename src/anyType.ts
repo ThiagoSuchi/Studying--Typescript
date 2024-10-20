@@ -1,5 +1,5 @@
 //--------------- ANY -----------------
-
+//Use apenas quando você precisar abrir mão da verificação de tipos (o que é desencorajado).
 // Exemplo 01 => Type Any
 const number: any = 30;
 const nombre: any = ['MrBreaks'];
@@ -15,3 +15,8 @@ const formulario: {[campoFormulario: string]: any} = {
 };
 
 console.log(formulario);
+
+
+
+
+
