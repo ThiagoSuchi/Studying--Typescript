@@ -1,9 +1,9 @@
 // Exercício 5
 
 enum Prioridade {  
-    BAIXA = "Baixa",  
-    MEDIA = "Média",  
-    ALTA = "Alta"  
+    BAIXA,  
+    MEDIA,  
+    ALTA   
 }  
 
 function descricaoPrioridade(prioridade: Prioridade): string {  
@@ -11,12 +11,10 @@ function descricaoPrioridade(prioridade: Prioridade): string {
         return "Essa tarefa pode ser feita depois.";  
     } else if (prioridade === Prioridade.MEDIA) {  
         return "Essa tarefa deve ser feita em breve.";  
-    } else if (prioridade === Prioridade.ALTA) {  
-        return "Essa tarefa é urgente!";  
     } else {  
-        return "Prioridade inválida.";  
-    }  
+        return "Essa tarefa é urgente!";  
+    } 
 }  
  
-const prioridade: Prioridade = Prioridade.MEDIA;  
+const prioridade = Prioridade.MEDIA;  
 console.log(descricaoPrioridade(prioridade));

@@ -2,9 +2,9 @@
 // Exercício 5
 var Prioridade;
 (function (Prioridade) {
-    Prioridade["BAIXA"] = "Baixa";
-    Prioridade["MEDIA"] = "M\u00E9dia";
-    Prioridade["ALTA"] = "Alta";
+    Prioridade[Prioridade["BAIXA"] = 0] = "BAIXA";
+    Prioridade[Prioridade["MEDIA"] = 1] = "MEDIA";
+    Prioridade[Prioridade["ALTA"] = 2] = "ALTA";
 })(Prioridade || (Prioridade = {}));
 function descricaoPrioridade(prioridade) {
     if (prioridade === Prioridade.BAIXA) {
@@ -13,11 +13,8 @@ function descricaoPrioridade(prioridade) {
     else if (prioridade === Prioridade.MEDIA) {
         return "Essa tarefa deve ser feita em breve.";
     }
-    else if (prioridade === Prioridade.ALTA) {
-        return "Essa tarefa é urgente!";
-    }
     else {
-        return "Prioridade inválida.";
+        return "Essa tarefa é urgente!";
     }
 }
 const prioridade = Prioridade.MEDIA;

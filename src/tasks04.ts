@@ -1,22 +1,22 @@
 // Exercício 4
 enum Nota {
-    A = 10,
-    B = 8,
-    C = 5, 
-    D = 3,
-    F = 0
+    A,
+    B,
+    C, 
+    D,
+    F
 }
 function notaAluno(nota: Nota) {
     if(nota == Nota.A){
-        return `A: Excelente!`
+        return `Excelente!`
     } else if(nota == Nota.B){
-        return `B: Bom`
+        return `Bom`
     } else if(nota == Nota.C) {
-        return `C: Satisfatório`
+        return `Satisfatório`
     } else if(nota == Nota.D) {
-        return `D: Insatisfatório`
+        return `Insatisfatório`
     } else {
-        return `F: Reprovado`
+        return `Reprovado`
     }
 }
 
