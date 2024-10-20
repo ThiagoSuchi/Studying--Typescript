@@ -4,7 +4,7 @@ console.log(texto);
 
 // ==> Variáveis [Type Annotations]
 let nomeE: string = 'Ana Beatriz';
-console.log(nome);
+console.log(nomeE);
 
 // ==> Array [Type Annotations]
 let animais: string[] = ['Cavalo', 'Girafa', 'Elefante', 'Leão']
