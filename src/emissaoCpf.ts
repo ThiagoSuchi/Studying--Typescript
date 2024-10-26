@@ -1,4 +1,4 @@
-let cpf = "76731503606"
+let cpf = "05190229203"
 
 function estadoEmissor(Cpf:string) {
     
