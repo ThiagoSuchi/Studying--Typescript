@@ -5,13 +5,13 @@ function validarCpf(cpf: string):boolean {
     let digitoVerificador2: number = 0
 
     if (conversor.length == 11) {
-        // Primeiro dígito verificador
 
+        // Primeiro dígito verificador
         let arrayMultiplicado: Array<number> = []
         let multiplicando: number = 10
         let soma: number = 0
 
-        // Aqui eu iterei os 9 primeiros numeros e multipliquei por 10 - 2
+        // Aqui eu iterei os 9 primeiros numeros e multipliquei de 10 - 2
         for (let i = 0; i < 9; i++) {
             arrayMultiplicado.push(conversor[i] * multiplicando)
             multiplicando--
@@ -29,7 +29,6 @@ function validarCpf(cpf: string):boolean {
         //-------------------------------------------------------------------------    
 
         // Segundo dígito verificador
-
         let arrayMultiplicado2: Array<number> = []
         let multiplicando2: number = 11
         let soma2: number = 0
