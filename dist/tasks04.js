@@ -1,5 +1,4 @@
 "use strict";
-// Exercício 4
 var Nota;
 (function (Nota) {
     Nota[Nota["A"] = 0] = "A";

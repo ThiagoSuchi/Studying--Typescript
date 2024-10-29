@@ -1,5 +1,4 @@
 "use strict";
-// Exercício 1
 function calcularArea(largura, altura) {
     return largura * altura;
 }

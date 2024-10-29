@@ -1,5 +1,4 @@
 "use strict";
-// Exercício 5
 var Prioridade;
 (function (Prioridade) {
     Prioridade[Prioridade["BAIXA"] = 0] = "BAIXA";

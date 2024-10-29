@@ -1,5 +1,4 @@
 "use strict";
-// Exercício 3
 function verificarAcesso(ehAdmin) {
     if (ehAdmin === true) {
         return `Acesso concedido. Bem-vindo ao sistema administrativo.`;

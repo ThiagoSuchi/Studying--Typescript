@@ -1,17 +1,13 @@
 "use strict";
 let texto = 'Hellow World, Thiago Hens';
 console.log(texto);
-// ==> Variáveis [Type Annotations]
 let nomeE = 'Ana Beatriz';
 console.log(nomeE);
-// ==> Array [Type Annotations]
 let animais = ['Cavalo', 'Girafa', 'Elefante', 'Leão'];
 console.log('Animais ==>' + ' ' + animais);
-// ==> Objeto [Type Annotations]
 let carro;
 carro = { marca: 'Chevrolet', ano: 2018, modelo: 'Onix Lts', preco: 50.000 };
 console.log(carro);
-// ==> Função [Type Annotations]
 function adcionarNum(num1, num2) {
     return num1 + num2;
 }

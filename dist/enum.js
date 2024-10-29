@@ -1,5 +1,4 @@
 "use strict";
-//----------------- ENUM ------------------
 var Cores;
 (function (Cores) {
     Cores["Amarelo"] = "#f1c40f";
@@ -9,12 +8,6 @@ var Cores;
 })(Cores || (Cores = {}));
 let coresPrimarias = Cores.Verde;
 console.log(`A cor é indicada pelo objeto: ${coresPrimarias}`);
-/*
- Tipos de Enums
-  ==> Numeric Enum
-  ==> Sting Enum
- */
-// Enum Numeric 
 var Idiomas;
 (function (Idiomas) {
     Idiomas[Idiomas["Portugues"] = 0] = "Portugues";
@@ -23,7 +16,6 @@ var Idiomas;
     Idiomas[Idiomas["Espanhol"] = 3] = "Espanhol";
 })(Idiomas || (Idiomas = {}));
 console.log(Idiomas);
-// String Enums
 var Dia;
 (function (Dia) {
     Dia["Segunda"] = "Seg";
@@ -35,7 +27,6 @@ var Dia;
     Dia["Domingo"] = "Dom";
 })(Dia || (Dia = {}));
 console.log(Dia);
-// Quando usar Enums?
 var tarefas;
 (function (tarefas) {
     tarefas[tarefas["ToDo"] = 0] = "ToDo";
