@@ -28,3 +28,9 @@ const cinema = {
     hoario: '19:30'
 };
 console.log(cinema);
+const cinemaA = {
+    filme: 'Som da liberdade',
+    hoario: '19:30',
+    valor: 15
+};
+console.log(cinemaA);

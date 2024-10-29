@@ -66,3 +66,19 @@ const cinema: Cinema = {
 }
 console.log(cinema);
 
+
+// Exemplo 06 --> Propriedade 'reandonly' (Se sua intenção é que ninguem modifique um determinado objeto use o reandonly)
+
+// Em TypeScript, a palavra-chave readonly é usada para tornar uma propriedade de um objeto imutável, ou seja, impede que o valor da propriedade seja alterado após sua inicialização.
+interface CinemaA {
+    filme: string,
+    hoario: string,
+    readonly valor: number //readonly é muito útil em TypeScript para aumentar a confiabilidade do código e proteger dados que devem permanecer constantes ao longo do tempo.
+}
+const cinemaA: CinemaA = {
+    filme: 'Som da liberdade', 
+    hoario: '19:30',
+    valor: 15
+}
+
+console.log(cinemaA);
