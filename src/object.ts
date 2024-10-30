@@ -36,12 +36,10 @@ console.log(onboarding02({nome: 'Laura Lemos', funcao: 'Front-end'}));
 
 
 // Exemplo 04 --> Uso do object com type Alias
-
 type Aluno = {
     nome: string,
     turma: number
 }
-
 
 function alunoTurma(aluno: Aluno) {
     return (
@@ -64,11 +62,11 @@ const cinema: Cinema = {
     filme: 'Som da liberdade', 
     hoario: '19:30'
 }
+
 console.log(cinema);
 
 
 // Exemplo 06 --> Propriedade 'reandonly' (Se sua intenção é que ninguem modifique um determinado objeto use o reandonly)
-
 // Em TypeScript, a palavra-chave readonly é usada para tornar uma propriedade de um objeto imutável, ou seja, impede que o valor da propriedade seja alterado após sua inicialização.
 interface CinemaA {
     filme: string,
