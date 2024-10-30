@@ -14,35 +14,29 @@ function estadoEmissor(Cpf) {
         num8: "SP",
         num9: "PR e SC"
     };
-    if (convertido[8] === 0) {
-        return `Seu Estado de emissão é ${numEstado.num0}`;
-    }
-    else if (convertido[8] === 1) {
-        return `Seu Estado de emissão é ${numEstado.num1}`;
-    }
-    else if (convertido[8] === 2) {
-        return `Seu Estado de emissão é ${numEstado.num2}`;
-    }
-    else if (convertido[8] === 3) {
-        return `Seu Estado de emissão é ${numEstado.num3}`;
-    }
-    else if (convertido[8] === 4) {
-        return `Seu Estado de emissão é ${numEstado.num4}`;
-    }
-    else if (convertido[8] === 5) {
-        return `Seu Estado de emissão é ${numEstado.num5}`;
-    }
-    else if (convertido[8] === 6) {
-        return `Seu Estado de emissão é ${numEstado.num6}`;
-    }
-    else if (convertido[8] === 7) {
-        return `Seu Estado de emissão é ${numEstado.num7}`;
-    }
-    else if (convertido[8] === 8) {
-        return `Seu Estado de emissão é ${numEstado.num8}`;
-    }
-    else if (convertido[8] === 9) {
-        return `Seu Estado de emissão é ${numEstado.num9}`;
+    switch (convertido[8]) {
+        case 0:
+            return `Seu estado de emissão é: ${numEstado.num0}`;
+        case 1:
+            return `Seu estado de emissão é: ${numEstado.num1}`;
+        case 2:
+            return `Seu estado de emissão é: ${numEstado.num2}`;
+        case 3:
+            return `Seu estado de emissão é: ${numEstado.num3}`;
+        case 4:
+            return `Seu estado de emissão é: ${numEstado.num4}`;
+        case 5:
+            return `Seu estado de emissão é: ${numEstado.num5}`;
+        case 6:
+            return `Seu estado de emissão é: ${numEstado.num6}`;
+        case 7:
+            return `Seu estado de emissão é: ${numEstado.num7}`;
+        case 8:
+            return `Seu estado de emissão é: ${numEstado.num8}`;
+        case 9:
+            return `Seu estado de emissão é: ${numEstado.num9}`;
+        default:
+            return `Cpf inválido!`;
     }
 }
 console.log(estadoEmissor(cpf));

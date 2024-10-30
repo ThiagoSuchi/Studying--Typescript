@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "dev": "tsc && node ./dist/object2.js",
+    "dev": "tsc && node ./dist/emissaoCpf.js",
     "build": "tsc"
   },
   "author": "",
