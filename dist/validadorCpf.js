@@ -14,7 +14,9 @@ function validarCpf(cpf) {
         for (let j = 0; j < arrayMultiplicado.length; j++) {
             soma += arrayMultiplicado[j];
         }
-        digitoVerificador = soma % 11;
+        let resto = soma % 11;
+        digitoVerificador = (11 - resto) >= 10 ? digitoVerificador = 0 : 11 - resto;
+        console.log(digitoVerificador);
         let arrayMultiplicado2 = [];
         let multiplicando2 = 11;
         let soma2 = 0;
@@ -26,16 +28,9 @@ function validarCpf(cpf) {
             soma2 += arrayMultiplicado2[j];
         }
         let resto2 = soma2 % 11;
-        digitoVerificador2 = 11 - resto2;
-        if (digitoVerificador2 == conversor[10] && digitoVerificador == conversor[9]) {
-            return true;
-        }
-        else {
-            return false;
-        }
-    }
-    else {
-        return false;
+        digitoVerificador2 = (11 - resto2) >= 10 ? digitoVerificador2 = 0 : 11 - resto2;
+        console.log(digitoVerificador2);
+        return digitoVerificador2 == conversor[10] && digitoVerificador == conversor[9] ? true : false;
     }
 }
-console.log(validarCpf("76731503606"));
+console.log(validarCpf("05190229203"));
