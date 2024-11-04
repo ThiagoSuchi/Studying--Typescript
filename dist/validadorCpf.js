@@ -32,5 +32,8 @@ function validarCpf(cpf) {
         console.log(digitoVerificador2);
         return digitoVerificador2 == conversor[10] && digitoVerificador == conversor[9] ? true : false;
     }
+    else {
+        return false;
+    }
 }
 console.log(validarCpf("05190229203"));

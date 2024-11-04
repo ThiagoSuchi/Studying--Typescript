@@ -1,4 +1,4 @@
-function validarCpf(cpf: string) {
+function validarCpf(cpf: string): boolean {
     let conversor = cpf.split("").map(Number);
 
     let digitoVerificador: number = 0;
@@ -51,6 +51,8 @@ function validarCpf(cpf: string) {
         
        
         return digitoVerificador2 == conversor[10] && digitoVerificador == conversor[9] ? true : false
+    }else{
+        return false
     }
 
 }
