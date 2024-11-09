@@ -2,6 +2,6 @@
     "watch": ["src"],
     "ext": "ts",
     "excecMap": {
-        "ts": "tsc && node ./dist/validadorCpf.js"
+        "ts": "tsc && ts-node ./dist/data.js"
     }
 }
